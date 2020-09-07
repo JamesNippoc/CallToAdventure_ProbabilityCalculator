@@ -1,0 +1,58 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "ElementaryEvent",
+"language": "GDScript",
+"path": "res://ElementaryEvent.gd"
+}, {
+"base": "Reference",
+"class": "RuneGroups",
+"language": "GDScript",
+"path": "res://RuneGroups.gd"
+}, {
+"base": "Reference",
+"class": "RuneSides",
+"language": "GDScript",
+"path": "res://RuneSides.gd"
+}, {
+"base": "Reference",
+"class": "Runes",
+"language": "GDScript",
+"path": "res://Runes.gd"
+} ]
+_global_script_class_icons={
+"ElementaryEvent": "",
+"RuneGroups": "",
+"RuneSides": "",
+"Runes": ""
+}
+
+[application]
+
+config/name="Call to Adventure - Probability Calculator"
+run/main_scene="res://Main.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Probas="*res://Probas.gd"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
