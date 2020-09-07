@@ -1,23 +1,23 @@
 [gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://Main.gd" type="Script" id=1]
-[ext_resource path="res://Pictures/CallToAdventure.PNG" type="Texture" id=2]
-[ext_resource path="res://Pictures/Dexterity.png" type="Texture" id=3]
-[ext_resource path="res://Pictures/Basic.png" type="Texture" id=4]
-[ext_resource path="res://Pictures/Wisdom.png" type="Texture" id=5]
-[ext_resource path="res://Pictures/Charisma.png" type="Texture" id=6]
-[ext_resource path="res://Pictures/Constitution.png" type="Texture" id=7]
-[ext_resource path="res://Pictures/Strength.png" type="Texture" id=8]
-[ext_resource path="res://Pictures/Intelligence.png" type="Texture" id=9]
-[ext_resource path="res://Pictures/Darks.png" type="Texture" id=10]
-[ext_resource path="res://Pictures/Flat_restart_icon.png" type="Texture" id=11]
-[ext_resource path="res://Fonts/Goudy Mediaeval Regular.ttf" type="DynamicFontData" id=12]
-[ext_resource path="res://Fonts/Goudy_50.tres" type="DynamicFont" id=13]
-[ext_resource path="res://Pictures/ExperienceGrabber.png" type="Texture" id=14]
+[ext_resource path="res://Fonts/Goudy Mediaeval Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Fonts/Goudy_50.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Scripts/Main.gd" type="Script" id=3]
+[ext_resource path="res://Pictures/Dexterity.png" type="Texture" id=4]
+[ext_resource path="res://Pictures/Basic.png" type="Texture" id=5]
+[ext_resource path="res://Pictures/Intelligence.png" type="Texture" id=6]
+[ext_resource path="res://Pictures/Darks.png" type="Texture" id=7]
+[ext_resource path="res://Pictures/Wisdom.png" type="Texture" id=8]
+[ext_resource path="res://Pictures/CallToAdventure.PNG" type="Texture" id=9]
+[ext_resource path="res://Pictures/ExperienceGrabber.png" type="Texture" id=10]
+[ext_resource path="res://Pictures/Strength.png" type="Texture" id=11]
+[ext_resource path="res://Pictures/Constitution.png" type="Texture" id=12]
+[ext_resource path="res://Pictures/Flat_restart_icon.png" type="Texture" id=13]
+[ext_resource path="res://Pictures/Charisma.png" type="Texture" id=14]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
-font_data = ExtResource( 12 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0, 0, 0, 1 )
@@ -27,7 +27,7 @@ border_color = Color( 0, 0, 0, 1 )
 [node name="Main" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 1 )
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -73,7 +73,7 @@ margin_bottom = 120.0
 rect_min_size = Vector2( 120, 120 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture_normal = ExtResource( 11 )
+texture_normal = ExtResource( 13 )
 expand = true
 stretch_mode = 5
 __meta__ = {
@@ -87,7 +87,7 @@ margin_right = 637.0
 margin_bottom = 267.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 stretch_mode = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -99,7 +99,7 @@ margin_right = 1018.0
 margin_bottom = 269.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 10 )
+texture = ExtResource( 7 )
 stretch_mode = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -152,7 +152,7 @@ margin_right = 295.0
 margin_bottom = 577.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 8 )
+texture = ExtResource( 11 )
 stretch_mode = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -206,7 +206,7 @@ margin_right = 672.0
 margin_bottom = 576.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 stretch_mode = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -260,7 +260,7 @@ margin_right = 1054.0
 margin_bottom = 571.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 7 )
+texture = ExtResource( 12 )
 stretch_mode = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -316,7 +316,7 @@ margin_right = 293.0
 margin_bottom = 864.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 9 )
+texture = ExtResource( 6 )
 stretch_mode = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -374,7 +374,7 @@ margin_right = 673.0
 margin_bottom = 868.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 5 )
+texture = ExtResource( 8 )
 stretch_mode = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -432,7 +432,7 @@ margin_right = 1055.0
 margin_bottom = 869.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 6 )
+texture = ExtResource( 14 )
 stretch_mode = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -511,7 +511,7 @@ margin_bottom = 252.0
 grow_horizontal = 0
 rect_min_size = Vector2( 700, 252 )
 size_flags_horizontal = 0
-texture = ExtResource( 2 )
+texture = ExtResource( 9 )
 expand = true
 stretch_mode = 5
 __meta__ = {
@@ -553,7 +553,7 @@ margin_bottom = 80.0
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/VBoxContainer/HBoxContainer3"]
 margin_right = 239.0
 margin_bottom = 80.0
-custom_fonts/font = ExtResource( 13 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Difficulty :"
 
@@ -562,7 +562,7 @@ margin_left = 243.0
 margin_right = 600.0
 margin_bottom = 80.0
 size_flags_horizontal = 11
-custom_fonts/font = ExtResource( 13 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "4"
 align = 2
@@ -576,7 +576,7 @@ margin_bottom = 210.0
 margin_right = 326.0
 margin_bottom = 80.0
 size_flags_horizontal = 9
-custom_fonts/font = ExtResource( 13 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Expectation : "
 
@@ -585,7 +585,7 @@ margin_left = 330.0
 margin_right = 600.0
 margin_bottom = 80.0
 size_flags_horizontal = 11
-custom_fonts/font = ExtResource( 13 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "1,5"
 align = 2
@@ -599,7 +599,7 @@ margin_bottom = 340.0
 margin_right = 464.0
 margin_bottom = 80.0
 size_flags_horizontal = 9
-custom_fonts/font = ExtResource( 13 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Success probability :"
 
@@ -608,7 +608,7 @@ margin_left = 468.0
 margin_right = 600.0
 margin_bottom = 80.0
 size_flags_horizontal = 11
-custom_fonts/font = ExtResource( 13 )
+custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0 %"
 align = 2
@@ -624,9 +624,9 @@ margin_right = 600.0
 margin_bottom = 540.0
 rect_min_size = Vector2( 600, 0 )
 size_flags_horizontal = 4
-custom_icons/grabber_disabled = ExtResource( 14 )
-custom_icons/grabber_highlight = ExtResource( 14 )
-custom_icons/grabber = ExtResource( 14 )
+custom_icons/grabber_disabled = ExtResource( 10 )
+custom_icons/grabber_highlight = ExtResource( 10 )
+custom_icons/grabber = ExtResource( 10 )
 custom_styles/slider = SubResource( 2 )
 min_value = 1.0
 max_value = 15.0
