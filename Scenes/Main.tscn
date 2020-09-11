@@ -53,7 +53,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GridContainer" type="GridContainer" parent="HBoxContainer"]
+[node name="ColorRect" type="ColorRect" parent="HBoxContainer"]
+margin_right = 1195.0
+margin_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="HBoxContainer/ColorRect"]
 margin_left = 70.0
 margin_top = 105.0
 margin_right = 1125.0
@@ -65,8 +71,11 @@ size_flags_vertical = 4
 custom_constants/vseparation = 80
 custom_constants/hseparation = 80
 columns = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="TextureButton" type="TextureButton" parent="HBoxContainer/GridContainer"]
+[node name="TextureButton" type="TextureButton" parent="HBoxContainer/ColorRect/GridContainer"]
 self_modulate = Color( 1, 1, 1, 0.784314 )
 margin_right = 120.0
 margin_bottom = 120.0
@@ -80,7 +89,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Basic" type="TextureRect" parent="HBoxContainer/GridContainer"]
+[node name="Basic" type="TextureRect" parent="HBoxContainer/ColorRect/GridContainer"]
 margin_left = 411.0
 margin_top = 2.0
 margin_right = 637.0
@@ -93,7 +102,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Dark" type="TextureRect" parent="HBoxContainer/GridContainer"]
+[node name="Dark" type="TextureRect" parent="HBoxContainer/ColorRect/GridContainer"]
 margin_left = 790.0
 margin_right = 1018.0
 margin_bottom = 269.0
@@ -105,7 +114,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="HBoxContainer/GridContainer/Dark"]
+[node name="Button3" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Dark"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_top = 7.0
 margin_right = 111.0
@@ -114,7 +123,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="HBoxContainer/GridContainer/Dark"]
+[node name="Button2" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Dark"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 62.0
 margin_top = 74.0
@@ -124,7 +133,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button1" type="Button" parent="HBoxContainer/GridContainer/Dark"]
+[node name="Button1" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Dark"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 122.0
 margin_top = 129.0
@@ -134,19 +143,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/GridContainer/Dark"]
+[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Dark"]
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 64.8866, 79.7285, 66.7322, 159.419, 9.65027, 152.878, 5.48804, 26.8221, 105.381, 5.4164, 112.517, 12.5516, 113.111, 66.066 )
+polygon = PoolVector2Array( 65.3853, 78.1013, 64.1272, 80.3527, 63.9286, 82.0081, 63.9073, 83.8909, 66.1224, 159.449, 9.65027, 152.878, 5.48804, 26.8221, 105.381, 5.4164, 112.517, 12.5516, 169.27, 54.0814, 67.4811, 76.9535 )
 
-[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/GridContainer/Dark"]
+[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Dark"]
 color = Color( 1, 1, 1, 0 )
 polygon = PoolVector2Array( 5.22876, 24.9564, 9.23328, 151.099, 63.2943, 157.773, 65.9639, 201.823, 118.69, 207.829, 122.027, 253.214, 224.142, 265.895, 224.142, 105.714, 169.414, 114.391, 167.412, 54.3228, 114.018, 62.3319, 112.683, 5.60118 )
 
-[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/GridContainer/Dark"]
+[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Dark"]
+position = Vector2( 0.264893, 0.264862 )
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 5.48804, 25.6329, 9.65027, 151.689, 62.57, 158.824, 66.1376, 201.636, 122.03, 207.582, 120.798, 129.102, 170.193, 117.202, 167.22, 53.5793, 113.111, 64.8768, 111.328, 4.22719 )
+polygon = PoolVector2Array( 5.48804, 25.6329, 9.65027, 151.689, 62.57, 158.824, 66.1376, 201.636, 122.03, 207.582, 120.076, 135.638, 120.076, 133.326, 120.706, 131.013, 121.757, 129.647, 123.544, 128.385, 215.412, 108.94, 167.22, 53.5793, 113.111, 64.8768, 111.328, 4.22719 )
 
-[node name="Strength" type="TextureRect" parent="HBoxContainer/GridContainer"]
+[node name="Strength" type="TextureRect" parent="HBoxContainer/ColorRect/GridContainer"]
 margin_top = 349.0
 margin_right = 295.0
 margin_bottom = 577.0
@@ -158,7 +168,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="HBoxContainer/GridContainer/Strength"]
+[node name="Button3" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Strength"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 174.0
 margin_top = 6.0
@@ -168,7 +178,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="HBoxContainer/GridContainer/Strength"]
+[node name="Button1" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Strength"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_top = 7.0
 margin_right = 102.0
@@ -177,7 +187,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button1" type="Button" parent="HBoxContainer/GridContainer/Strength"]
+[node name="Button2" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Strength"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 80.0
 margin_top = 58.0
@@ -187,19 +197,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/GridContainer/Strength"]
+[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Strength"]
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 293.609, 172.391, 174.109, 175.391, 173.109, 115.891, 188.609, 6.3909, 270.609, 5.3909 )
+polygon = PoolVector2Array( 293.609, 172.391, 175.772, 174.568, 173.484, 171.641, 173.484, 115.766, 188.609, 6.3909, 270.609, 5.3909 )
 
-[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/GridContainer/Strength"]
+[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Strength"]
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 81.1091, 175.891, 16.1091, 174.891, 6.6091, 163.891, 7.1091, 9.8909, 103.109, 10.8909, 104.609, 56.8909, 176.609, 52.8909, 174.609, 111.891, 187.109, 6.3909, 269.609, 6.3909, 294.109, 173.391, 173.609, 174.891, 173.109, 56.3909, 79.3591, 60.481 )
+polygon = PoolVector2Array( 83.6091, 59.6409, 85.3594, 59.0395, 87.4841, 58.8909, 172.484, 58.1409, 183.609, 1.3909, 272.609, 2.3909, 294.109, 173.391, 171.642, 221.376, 81.609, 221.34, 81.6091, 64.6409, 81.9841, 62.0159, 82.648, 60.7498 )
 
-[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/GridContainer/Strength"]
+[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Strength"]
 color = Color( 1, 1, 1, 0 )
 polygon = PoolVector2Array( 7.26797, 10.8732, 7.93539, 174.391, 77.3471, 175.726, 80.0167, 220.443, 176.125, 221.111, 176.793, 175.726, 294.259, 173.056, 270.899, 6.20126, 186.804, 4.86642, 175.458, 95.6355, 171.453, 55.5904, 106.714, 54.9229, 102.709, 10.8732 )
 
-[node name="Dexterity" type="TextureRect" parent="HBoxContainer/GridContainer"]
+[node name="Dexterity" type="TextureRect" parent="HBoxContainer/ColorRect/GridContainer"]
 margin_left = 375.0
 margin_top = 350.0
 margin_right = 672.0
@@ -212,7 +222,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="HBoxContainer/GridContainer/Dexterity"]
+[node name="Button3" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Dexterity"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 174.0
 margin_top = 6.0
@@ -222,7 +232,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="HBoxContainer/GridContainer/Dexterity"]
+[node name="Button1" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Dexterity"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_top = 7.0
 margin_right = 102.0
@@ -231,7 +241,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button1" type="Button" parent="HBoxContainer/GridContainer/Dexterity"]
+[node name="Button2" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Dexterity"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 80.0
 margin_top = 58.0
@@ -241,19 +251,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/GridContainer/Dexterity"]
+[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Dexterity"]
 color = Color( 1, 1, 1, 0 )
 polygon = PoolVector2Array( 294.609, 172.391, 283.109, 176.391, 174.109, 175.891, 174.231, 99.7408, 187.109, 5.8909, 270.609, 5.8909 )
 
-[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/GridContainer/Dexterity"]
+[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Dexterity"]
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 80.6091, 174.891, 4.6091, 174.391, 4.1091, 10.8909, 101.109, 9.3909, 103.109, 56.3909, 175.109, 56.3909, 174.109, 104.891, 187.109, 5.8909, 272.109, 6.3909, 294.109, 171.891, 285.609, 175.891, 175.109, 176.391, 172.119, 58.7451, 79.9388, 59.4811 )
+polygon = PoolVector2Array( 84.0843, 59.576, 86.754, 59.0755, 153.579, 58.408, 187.109, 5.8909, 272.109, 6.3909, 294.109, 171.891, 177.151, 223.149, 80.1707, 225.391, 79.7735, 65.1474, 80.33, 62.5794, 81.8318, 60.744 )
 
-[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/GridContainer/Dexterity"]
+[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Dexterity"]
 color = Color( 1, 1, 1, 0 )
 polygon = PoolVector2Array( 4.02081, 11.208, 4.68826, 174.059, 76.1021, 175.393, 80.1067, 221.445, 176.215, 221.445, 176.883, 175.393, 295.016, 175.393, 271.656, 5.86868, 184.892, 5.20126, 175.548, 92.6333, 174.88, 57.26, 103.466, 55.2578, 101.464, 11.8755 )
 
-[node name="Constitution" type="TextureRect" parent="HBoxContainer/GridContainer"]
+[node name="Constitution" type="TextureRect" parent="HBoxContainer/ColorRect/GridContainer"]
 margin_left = 754.0
 margin_top = 355.0
 margin_right = 1054.0
@@ -266,7 +276,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="HBoxContainer/GridContainer/Constitution"]
+[node name="Button3" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Constitution"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 180.0
 margin_top = 6.0
@@ -276,7 +286,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="HBoxContainer/GridContainer/Constitution"]
+[node name="Button1" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Constitution"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_top = 7.0
 margin_right = 102.0
@@ -285,7 +295,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button1" type="Button" parent="HBoxContainer/GridContainer/Constitution"]
+[node name="Button2" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Constitution"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 86.0
 margin_top = 47.0
@@ -295,21 +305,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/GridContainer/Constitution"]
+[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Constitution"]
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 298.609, 166.391, 292.119, 175.26, 179.109, 176.391, 179.816, 102.157, 190.109, 6.8909, 275.109, 6.3909 )
+polygon = PoolVector2Array( 298.609, 166.391, 292.119, 175.26, 179.109, 176.391, 179.109, 101.16, 190.109, 6.8909, 275.109, 6.3909 )
 
-[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/GridContainer/Constitution"]
+[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Constitution"]
 position = Vector2( 1.68365, -3.92859 )
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 83.4255, 174.819, 11.4255, 175.319, 4.42548, 167.319, 4.92548, 10.3195, 101.925, 9.81949, 103.925, 50.8195, 178.925, 50.3195, 178.425, 106.819, 188.425, 10.3195, 273.425, 10.3195, 297.425, 170.819, 292.925, 178.319, 177.425, 180.319, 177.658, 52.4956, 83.31, 51.523 )
+polygon = PoolVector2Array( 182.58, 214.933, 83.6917, 214.933, 83.692, 56.901, 84.4514, 54.024, 86.5349, 52.3374, 89.412, 51.5437, 158.365, 50.4524, 186.7, 5.17029, 274.726, 5.54486, 299.073, 180.847 )
 
-[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/GridContainer/Constitution"]
+[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Constitution"]
 position = Vector2( 17.9445, -10.6634 )
 color = Color( 1, 1, 1, 0 )
 polygon = PoolVector2Array( -10.4922, 16.2041, -11.1596, 183.059, 64.2589, 181.724, 68.9308, 222.437, 164.372, 220.435, 163.704, 186.396, 282.505, 184.394, 257.811, 16.8715, 167.042, 17.5389, 163.037, 94.9596, 161.702, 56.9167, 90.2883, 54.247, 84.2814, 17.5389 )
 
-[node name="Intelligence" type="TextureRect" parent="HBoxContainer/GridContainer"]
+[node name="Intelligence" type="TextureRect" parent="HBoxContainer/ColorRect/GridContainer"]
 margin_left = 2.0
 margin_top = 661.0
 margin_right = 293.0
@@ -322,7 +332,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="HBoxContainer/GridContainer/Intelligence"]
+[node name="Button3" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Intelligence"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 172.0
 margin_top = 6.0
@@ -332,7 +342,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="HBoxContainer/GridContainer/Intelligence"]
+[node name="Button1" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Intelligence"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 3.0
 margin_top = 5.0
@@ -342,7 +352,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button1" type="Button" parent="HBoxContainer/GridContainer/Intelligence"]
+[node name="Button2" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Intelligence"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 77.9771
 margin_top = 38.5051
@@ -352,22 +362,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/GridContainer/Intelligence"]
+[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Intelligence"]
 position = Vector2( -7.07907, -3.30359 )
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 291.178, 176.176, 180.707, 176.621, 180.707, 108.022, 193.625, 6.90509, 275.142, 8.24146, 297.86, 166.821 )
+polygon = PoolVector2Array( 291.178, 176.176, 179.939, 178.025, 179.939, 108.022, 193.625, 6.90509, 275.142, 8.24146, 297.86, 166.821 )
 
-[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/GridContainer/Intelligence"]
+[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Intelligence"]
 position = Vector2( -1.6199, -5.81635 )
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 80.8124, 175.57, 12.6586, 175.125, 5.08599, 163.989, 5.97689, 9.86328, 99.5213, 11.1996, 101.303, 42.8265, 173.466, 44.1629, 175.693, 115.435, 187.275, 12.0905, 270.128, 11.1996, 292.401, 168.889, 285.719, 178.243, 174.802, 177.798, 173.157, 45.4654, 81.7475, 44.3098 )
+polygon = PoolVector2Array( 178.731, 206.186, 81.0961, 207.723, 80.6892, 48.505, 80.9865, 46.6469, 81.8041, 45.0117, 83.3649, 43.8225, 85.0744, 43.1536, 87.3603, 42.6375, 152.116, 42.9307, 187.275, 12.0905, 270.128, 11.1996, 295.3, 177.398 )
 
-[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/GridContainer/Intelligence"]
+[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Intelligence"]
 position = Vector2( -1.7346, -20.574 )
 color = Color( 1, 1, 1, 0 )
 polygon = PoolVector2Array( 5.66769, 25.1704, 3.66544, 187.353, 77.749, 191.358, 77.749, 208.711, 82.421, 221.392, 174.525, 220.724, 178.529, 195.363, 293.993, 192.025, 271.968, 23.8356, 187.206, 23.1682, 176.527, 113.937, 175.192, 55.8718, 103.111, 53.8695, 98.4391, 25.1704 )
 
-[node name="Wisdom" type="TextureRect" parent="HBoxContainer/GridContainer"]
+[node name="Wisdom" type="TextureRect" parent="HBoxContainer/ColorRect/GridContainer"]
 margin_left = 375.0
 margin_top = 658.0
 margin_right = 673.0
@@ -380,7 +390,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="HBoxContainer/GridContainer/Wisdom"]
+[node name="Button3" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Wisdom"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 184.0
 margin_top = 9.0
@@ -390,7 +400,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="HBoxContainer/GridContainer/Wisdom"]
+[node name="Button1" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Wisdom"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 3.0
 margin_top = 5.0
@@ -400,7 +410,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button1" type="Button" parent="HBoxContainer/GridContainer/Wisdom"]
+[node name="Button2" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Wisdom"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 93.0791
 margin_top = 41.3368
@@ -410,22 +420,22 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/GridContainer/Wisdom"]
+[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Wisdom"]
 position = Vector2( -7.07907, -3.30359 )
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 299.928, 168.04, 291.019, 176.503, 193.02, 176.948, 192.619, 51.9242, 195.248, 9.90497, 276.765, 11.2413 )
+polygon = PoolVector2Array( 299.928, 168.04, 291.019, 176.503, 192.797, 177.14, 192.797, 54.3154, 192.599, 53.0256, 192.152, 52.1328, 191.11, 51.2398, 189.622, 48.9083, 195.248, 9.90497, 276.765, 11.2413 )
 
-[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/GridContainer/Wisdom"]
+[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Wisdom"]
 position = Vector2( 2.62753, -2.51276 )
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 91.1057, 175.267, 3.35214, 173.93, 6.02484, 12.6777, 99.5692, 12.6777, 100.015, 44.7501, 179.75, 44.7501, 184.65, 10.4504, 267.504, 10.8959, 289.776, 170.367, 281.758, 176.158, 183.314, 176.158, 182.697, 45.1617, 88.9229, 44.8969 )
+polygon = PoolVector2Array( 90.9618, 208.119, 90.962, 51.417, 91.8566, 48.8411, 93.1691, 47.0911, 94.9816, 45.5286, 98.0441, 44.6536, 179.561, 45.3967, 184.65, 10.4504, 267.504, 10.8959, 291.152, 174.685, 194.489, 206.758 )
 
-[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/GridContainer/Wisdom"]
+[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Wisdom"]
 position = Vector2( 11.9516, -15.8547 )
 color = Color( 1, 1, 1, 0 )
 polygon = PoolVector2Array( -5.26108, 25.4534, -6.59592, 188.304, 76.8316, 188.971, 79.5013, 220.34, 174.942, 219.673, 177.612, 192.308, 283.064, 188.971, 257.035, 22.7838, 173.607, 23.4511, 167.601, 55.4873, 92.8496, 53.485, 92.1822, 24.7859 )
 
-[node name="Charisma" type="TextureRect" parent="HBoxContainer/GridContainer"]
+[node name="Charisma" type="TextureRect" parent="HBoxContainer/ColorRect/GridContainer"]
 margin_left = 753.0
 margin_top = 657.0
 margin_right = 1055.0
@@ -438,7 +448,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="HBoxContainer/GridContainer/Charisma"]
+[node name="Button3" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Charisma"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 179.0
 margin_top = 7.0
@@ -448,7 +458,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="HBoxContainer/GridContainer/Charisma"]
+[node name="Button1" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Charisma"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 3.0
 margin_top = 5.0
@@ -458,7 +468,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button1" type="Button" parent="HBoxContainer/GridContainer/Charisma"]
+[node name="Button2" type="Button" parent="HBoxContainer/ColorRect/GridContainer/Charisma"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 86.0
 margin_top = 44.0
@@ -468,17 +478,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/GridContainer/Charisma"]
+[node name="Polygon2" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Charisma"]
 position = Vector2( -7.0791, -3.30359 )
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 303.382, 169.455, 294.473, 177.473, 186.228, 178.364, 187.565, 101.301, 198.255, 10.8748, 282.891, 8.64758 )
+polygon = PoolVector2Array( 303.382, 169.455, 294.473, 177.473, 185.216, 178.933, 186.422, 101.49, 198.255, 10.8748, 282.891, 8.64758 )
 
-[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/GridContainer/Charisma"]
+[node name="Polygon1" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Charisma"]
 position = Vector2( 2.62756, -2.51276 )
 color = Color( 1, 1, 1, 0 )
-polygon = PoolVector2Array( 83.4228, 173.564, 12.5963, 172.673, 3.68732, 159.755, 6.36005, 10.5294, 99.459, 9.19305, 99.4211, 43.7437, 177.204, 43.7437, 176.967, 106.301, 189.44, 10.084, 271.402, 9.19305, 294.566, 168.664, 286.102, 177.573, 175.631, 178.018, 175.22, 45.728, 82.4274, 45.8971 )
+polygon = PoolVector2Array( 83.9568, 212.778, 83.957, 52.001, 85.1101, 49.1157, 87.0568, 47.3459, 89.5935, 45.9891, 92.1859, 45.5423, 174.112, 46.1188, 189.44, 10.084, 271.402, 9.19305, 297.814, 178.412, 182.189, 208.616 )
 
-[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/GridContainer/Charisma"]
+[node name="Polygon0" type="Polygon2D" parent="HBoxContainer/ColorRect/GridContainer/Charisma"]
 position = Vector2( 3.92859, -15.3828 )
 color = Color( 1, 1, 1, 0 )
 polygon = PoolVector2Array( 1.85419, 21.9771, 1.85419, 174.816, 11.1981, 186.162, 77.9401, 187.497, 80.6097, 222.203, 175.383, 221.536, 178.053, 190.834, 296.854, 190.167, 270.824, 19.9748, 186.729, 21.9771, 178.053, 106.072, 174.716, 58.0177, 99.2975, 56.0154, 99.9649, 22.6445 )

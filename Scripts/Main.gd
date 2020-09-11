@@ -1,6 +1,6 @@
 extends Control
 
-onready var runes_container = $HBoxContainer/GridContainer
+onready var runes_container = $HBoxContainer/ColorRect/GridContainer
 onready var difficulty_text = find_node("Difficulty")
 onready var probability_text = find_node("Probability")
 onready var expectation_text = find_node("Expectation")
