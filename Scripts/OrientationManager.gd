@@ -13,13 +13,32 @@ enum Orientation{
 var current_scene
 var orientation = Orientation.PORTRAIT
 
+
 func _ready():
 	var root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count() - 1)
 
 func _process(delta):
-	var new_orientation = gravity2orientation(Input.get_gravity())
-	if orientation!=new_orientation:
+	if OS.is_debug_build():
+		mouse_testing()
+		return
+	var gravity = Input.get_gravity()
+	var new_orientation = gravity2orientation(gravity)
+	if orientation!=new_orientation and abs(gravity.z)<6.0:
+		change_orientation(new_orientation)
+		orientation = new_orientation
+
+func mouse_testing():
+	var new_orientation
+	if Input.is_key_pressed(KEY_L):
+		new_orientation = Orientation.LANDSCAPE
+	elif Input.is_key_pressed(KEY_R):
+		new_orientation = Orientation.REVERSE_LANDSCAPE
+	elif Input.is_key_pressed(KEY_P):
+		new_orientation = Orientation.PORTRAIT
+	else:
+		new_orientation = orientation
+	if new_orientation!=orientation:
 		change_orientation(new_orientation)
 	orientation = new_orientation
 

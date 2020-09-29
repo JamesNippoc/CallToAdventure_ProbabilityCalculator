@@ -45,7 +45,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Call to Adventure - Probability Calculator"
-run/main_scene="res://Scenes/Landscape.tscn"
+run/main_scene="res://Scenes/Portrait.tscn"
 
 [autoload]
 

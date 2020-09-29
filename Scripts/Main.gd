@@ -7,6 +7,7 @@ onready var expectation_text = find_node("Expectation")
 onready var difficulty_slider = find_node("DifficultySlider")
 
 func _ready():
+	add_to_group("Main")
 	runes_container.connect("expectation_update", self, "on_expectation_updated")
 	runes_container.connect("runes_changed", self, "update_probability")
 	difficulty_slider.connect("difficulty_value_changed", self, "on_difficulty_changed")

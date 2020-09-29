@@ -76,3 +76,4 @@ func load_selected_runes():
 	for runes_group in get_tree().get_nodes_in_group("RunesGroup"):
 		if Values.selected_runes.has(runes_group.name):
 			runes_group.handle_selection(0, Values.selected_runes[runes_group.name])
+	update_values()
