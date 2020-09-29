@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Pictures/Dexterity.png" type="Texture" id=1]
 [ext_resource path="res://Pictures/Constitution.png" type="Texture" id=2]
@@ -9,8 +9,10 @@
 [ext_resource path="res://Pictures/Basic.png" type="Texture" id=7]
 [ext_resource path="res://Pictures/Wisdom.png" type="Texture" id=8]
 [ext_resource path="res://Pictures/Flat_restart_icon.png" type="Texture" id=9]
+[ext_resource path="res://Scripts/RunesGrid.gd" type="Script" id=10]
+[ext_resource path="res://Scripts/RunesGroup.gd" type="Script" id=11]
 
-[node name="GridContainer" type="GridContainer"]
+[node name="RunesGrid" type="GridContainer"]
 margin_left = 70.0
 margin_top = 105.0
 margin_right = 1125.0
@@ -22,6 +24,7 @@ size_flags_vertical = 4
 custom_constants/vseparation = 80
 custom_constants/hseparation = 80
 columns = 3
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -61,6 +64,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource( 5 )
 stretch_mode = 3
+script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -115,6 +119,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource( 6 )
 stretch_mode = 3
+script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -169,6 +174,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource( 1 )
 stretch_mode = 3
+script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -223,6 +229,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource( 2 )
 stretch_mode = 3
+script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -279,6 +286,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource( 4 )
 stretch_mode = 3
+script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -337,6 +345,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource( 8 )
 stretch_mode = 3
+script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -395,6 +404,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource( 3 )
 stretch_mode = 3
+script = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
