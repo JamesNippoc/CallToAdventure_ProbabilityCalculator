@@ -19,7 +19,6 @@ func _ready():
 	runes_container.get_child(0).connect("button_down", self, "reset_selection")
 	reset_selection(true)
 	difficulty_slider.connect("value_changed", self, "on_difficulty_changed")
-	find_node("Compute").connect("button_down", self, "on_compute_button_down")
 	
 	if OS.is_debug_build():
 		test()
@@ -37,9 +36,6 @@ func reset_selection(connect:bool=false):
 			var rune = runes_group.find_node("Button"+str(j+1)) as Button
 			if connect:
 				rune.connect("button_down", self, "on_rune_button_down", [runes_group.name, j+1])
-	update_values()
-
-func on_compute_button_down():
 	update_values()
 
 func update_values():

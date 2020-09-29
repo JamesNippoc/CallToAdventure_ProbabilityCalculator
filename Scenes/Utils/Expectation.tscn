@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Fonts/Goudy_50.tres" type="DynamicFont" id=1]
+
+[node name="HBoxContainer2" type="HBoxContainer"]
+margin_top = 130.0
+margin_right = 600.0
+margin_bottom = 210.0
+
+[node name="Label3" type="Label" parent="."]
+margin_right = 326.0
+margin_bottom = 80.0
+size_flags_horizontal = 9
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Expectation : "
+
+[node name="Expectation" type="Label" parent="."]
+margin_left = 330.0
+margin_right = 600.0
+margin_bottom = 80.0
+size_flags_horizontal = 11
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1,5"
+align = 2

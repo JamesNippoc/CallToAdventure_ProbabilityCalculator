@@ -39,7 +39,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Call to Adventure - Probability Calculator"
-run/main_scene="res://Scenes/Main.tscn"
+run/main_scene="res://Scenes/MainLandscape.tscn"
 
 [autoload]
 
@@ -49,6 +49,6 @@ Probas="*res://Scripts/Probas.gd"
 
 window/size/width=1920
 window/size/height=1080
-window/handheld/orientation="sensor_landscape"
+window/handheld/orientation="sensor"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
